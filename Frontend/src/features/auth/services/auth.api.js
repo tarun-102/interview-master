@@ -1,6 +1,6 @@
 export async function register({ username, email, password }) {
   try {
-    const response = await fetch("http://localhost:3000/api/auth/register", {
+    const response = await fetch("https://interview-master-bwsh.onrender.com/api/auth/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -28,7 +28,7 @@ export async function register({ username, email, password }) {
 
 export async function login({ email, password }) {
   try {
-    const response = await fetch("http://localhost:3000/api/auth/login", {
+    const response = await fetch("https://interview-master-bwsh.onrender.com/api/auth/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -52,7 +52,7 @@ export async function login({ email, password }) {
 
 export async function getMe() {
   try {
-    const response = await fetch("http://localhost:3000/api/auth/get-me", {
+    const response = await fetch("https://interview-master-bwsh.onrender.com/api/auth/get-me", {
       credentials: "include",
     });
       let data = {}
@@ -72,7 +72,7 @@ export async function getMe() {
 
 export async function logout() {
   try {
-    const response = await fetch("http://localhost:3000/api/auth/logout", {
+    const response = await fetch("https://interview-master-bwsh.onrender.com/api/auth/logout", {
       credentials: "include",
     });
     const data = await response.json();
