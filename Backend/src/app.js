@@ -16,7 +16,7 @@ app.use(cokieparser());
 app.use(cors({
     origin: [
     "http://localhost:5173",
-    "https://your-app.vercel.app"
+    "https://interview-master-opal.vercel.app"
   ],
     credentials: true,
 }))
