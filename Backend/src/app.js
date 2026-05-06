@@ -1,5 +1,8 @@
 const express = require('express')
 const app = express();
+
+app.set("trust proxy", 1);
+
 const authRouter = require('./routes/auth.routes')
 const cokieparser = require("cookie-parser")
 const interviewRouter = require('./routes/interview.routes')
